@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+</head>
+<body>
+    <script>
+
+        function imprimir(mensaje) {
+            document.write("<br>")
+            document.write(mensaje)
+            document.write("<br>")
+        }
+
+        function calcularIMC(peso, altura, nombre) {
+            imc = peso / (altura * altura);
+            imprimir("El IMC de " + nombre + " es "+ Math.round(imc))
+        }
+
+        calcularIMC(65, 1.65, "Josue");
+        calcularIMC(60, 1.62, "Nayeon");
+        // el codigo funciona sin colocar 'var' ???
+        var nombre = prompt("Indique su nombre");
+        var peso = prompt("Indique su peso");
+        var altura = prompt("Indique su altura");
+        calcularIMC(peso, altura, nombre);
+    
+    </script>
+    
+</body>
+</html>
